@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>avaliação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            text-align: center;
+            background-image: url('imagens/fundo.png');            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .tit{
+            margin-top: 40px;
+            margin-left: 250px;
+            padding-top: 5px;
+            padding-bottom: 8px;
+            border-radius: 25px;
+            background-color: darkcyan;
+            text-align: center;
+            color: white; 
+            width: 60%;
+        }
+        td{
+            border: 2px solid black;
+            padding: 1px;
+            text-align: center;
+            font-family: Helvetica;
+            font-size: larger;  
+            font-weight: 100;
+            width: 20%;            
+        }
+        td td{
+            color: white;
+            border-radius: 20%;
+        }
+        tr{
+            height: 50px
+        }
+        .table, .table2{        
+            border: 2px solid black;                
+            background-color: rgb(226, 215, 215);
+            color: rgb(3, 3, 3);                        
+            margin: 30px auto auto auto;
+            width: 50%;
+            font-size: large;
+        }
+        .hide {
+            display: none;
+        }
+        td.certo{
+            border: dashed 3px rgb(133, 13, 13);
+            text-align: left;
+        }
+        #c{
+            font-size: xx-large;            
+            text-align: center;
+            color: red;
+            text-shadow: 1px 1px black;
+            border-radius: 10%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <h4 class = "tit">Arraste e solte o resultado sobre a sentença correspondente</h4>
+        <table class="table">
+            <tr>
+                <td id="receb1">5 x 9</td>
+                <td id="receb2">7 x 3</td>
+                <td id="receb3">9 x 8</td>
+                <td id="receb4">9 x 3</td>
+            </tr>
+            <tr>
+                <td id="receb5">24 : 3</td>
+                <td id="receb6">45 : 5</td>
+                <td id="receb7">30 : 6</td>
+                <td id="receb8">24 : 6</td>
+            </tr>
+            <tr>
+                <td id="receb9">7 x 4</td>
+                <td id="receb10">7 x 7</td>
+                <td id="receb11">5 x 5</td>
+                <td id="receb12">3 x 4</td>                
+            </tr>
+            <tr>
+                <td id="receb13">21 : 3</td>
+                <td id="receb14">12 : 2</td>
+                <td id="receb15">27 : 9</td>
+                <td id="receb16">18 : 9</td>
+            </tr>
+        </table>
+        <br>
+        <span id="c"></span>
+        <table class="table2" id = 'table2'>        
+            <tr style="">
+                <td draggable="true" id="ele1">4</td>
+                <td draggable="true" id="ele2">12</td>
+                <td draggable="true" id="ele3">8</td>
+                <td draggable="true" id="ele4">27</td>
+            </tr>
+            <tr>
+                <td draggable="true" id="ele5">49</td>
+                <td draggable="true" id="ele6">45</td>
+                <td draggable="true" id="ele7">7</td>
+                <td draggable="true" id="ele8">5</td>
+            </tr>
+            <tr>
+                <td draggable="true" id="ele9">72</td>
+                <td draggable="true" id="ele10">28</td>
+                <td draggable="true" id="ele11">21</td>
+                <td draggable="true" id="ele12">25</td>
+            </tr>
+            <tr>
+                <td draggable="true" id="ele13">2</td>
+                <td draggable="true" id="ele14">6</td>
+                <td draggable="true" id="ele15">3</td>
+                <td draggable="true" id="ele16">9</td>
+            </tr>            
+        </table>
+        <br>
+      <!--  <p class="btn btn-success" id = 'limp'>Embaralhar</p> -->          
+    </div>
+    <script src="scripts/script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
